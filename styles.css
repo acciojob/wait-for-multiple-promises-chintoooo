@@ -1,28 +1,48 @@
-/*  your css code here. If applicable */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-}
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
+    table {
+      width: 60%;
+      margin: 50px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
 
-h2 {
-  text-align: center;
-  color: #333;
-}
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
 
-.table {
-  margin-top: 20px;
-}
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
 
-td {
-  text-align: center;
-}
+    td[colspan="2"] {
+      font-weight: bold;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
 
-.loading {
-  font-style: italic;
-  color: gray;
-}
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Promise</th>
+        <th>Time Taken (seconds)</th>
+      </tr>
+    </thead>
+    <tbody id="promiseTable">
+      <tr>
+        <td colspan="2">Loading...</td>
+      </tr>
+    </tbody>
+  </table>
