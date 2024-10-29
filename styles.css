@@ -1,48 +1,30 @@
-body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-
-    table {
-      width: 60%;
-      margin: 50px auto;
+ table {
+      width: 50%;
       border-collapse: collapse;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background-color: white;
+      margin: 20px auto;
     }
-
     th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
+      border: 1px solid #000;
+      padding: 10px;
       text-align: center;
     }
-
     th {
-      background-color: #4CAF50;
-      color: white;
-    }
-
-    td[colspan="2"] {
-      font-weight: bold;
-      font-size: 18px;
-      color: #555;
+      background-color: #f0f0f0;
     }
   </style>
 </head>
-
 <body>
-  <table id="output">
-    <thead>
-      <tr>
-        <th>Promise</th>
-        <th>Time Taken (seconds)</th>
-      </tr>
-    </thead>
-    <tbody id="promiseTable">
-      <tr id="loading">
-        <td colspan="2">Loading...</td>
-      </tr>
-    </tbody>
-  </table>
+
+<table id="promiseTable">
+  <thead>
+    <tr>
+      <th>Promise</th>
+      <th>Time (seconds)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="loadingRow">
+      <td colspan="2">Loading...</td>
+    </tr>
+  </tbody>
+</table>
