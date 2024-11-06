@@ -1,4 +1,4 @@
-   window.onload = function () {
+  window.onload = function () {
   const outputElement = document.getElementById("output");
 
   // Insert the loading row
